@@ -1,5 +1,26 @@
-<h1>
-    <p class="text-danger">login works!</p>
-
-</h1>
-<button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+<div class="container"  *ngIf="!submitted">
+    <h1>Registration Form</h1>
+    <form [formGroup]="registerForm">
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" formControlName="userName">
+        <p *ngIf="registerForm.controls['userName'].errors" class="alert alert-danger">This field is required!</p>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" formControlName="email">
+        <p *ngIf="registerForm.controls['email'].errors" class="alert alert-danger">This field is required!</p>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control" formControlName="password">
+        <p *ngIf="registerForm.controls['password'].errors" class="alert alert-danger">This field is required!</p>
+      </div>
+      <button type="submit" class="btn-primary" (click)="submitFunction(registerForm.value)">Submit</button>
+    </form>
+  <br/>
+  </div>
+  <div *ngIf="submitted">
+    <h1>It worked</h1>
+  </div>
+  

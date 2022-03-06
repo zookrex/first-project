@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AllDataService {
   private url="http://localhost:3000/users";
+  private cardUrl="http://localhost:3000/movies";
   // body!: string;
 
   constructor(private http:HttpClient) { }
@@ -19,5 +20,8 @@ export class AllDataService {
  
     return this.http.post(this.url,data);
     
+  }
+  getCards(){
+    return this.http.get(this.cardUrl);
   }
 }

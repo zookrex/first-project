@@ -1,0 +1,61 @@
+* body{
+	background-color: #000;
+	font-family: 'Oswald', sans-serif;
+
+}
+ nav,.row{
+	background-color: #000 !important;
+	font-family: 'Oswald', sans-serif;
+	color: aliceblue;
+
+}
+.card{
+	background-color: #000;
+	height: 100%;
+	border: 1px solid #E50914;
+} 
+
+.a1{
+	margin: 15px;
+}
+
+.search{
+	float: right;
+}
+.brandColor{
+	color: #E50914;
+	font-size: 3rem;
+}
+
+.img-thumbnail {
+   
+    background-color: #000;
+    
+    height: 100%;
+}
+.btn{
+	background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    float: right;
+}
+
+
+
+  .a1:hover{
+  opacity: 0.5;
+    
+  }
+.brandColor:hover{
+	opacity: 0.7;
+	color: #E50914;
+} 
+.mat-icon{
+	color: aliceblue;
+}
+.iconsBtn{
+background: black;
+border: none;
+}
